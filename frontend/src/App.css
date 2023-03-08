@@ -1,0 +1,442 @@
+:root {
+    --beige: #efe0b4;
+    --lightGreen: #2c462e;
+    --darkGreen: #071f0e;
+    --gold: #ac9341;
+}
+
+html {
+    background-color: var(--beige);
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+button {
+    /* margin: 20px 0px 0px 20px; */
+    padding: 10px;
+    border: solid 0.5px var(--gold);
+    font-size: 16px;
+    color: var(--gold);
+    font-weight: 300;
+    background: transparent;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--gold);
+    color: var(--darkGreen);
+    transition: 0.5s;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,
+h3,
+h2,
+h4,
+h5,
+h6 {
+    font-family: "Noto Serif", serif;
+}
+
+.star {
+    color: var(--gold);
+}
+
+p.star {
+    display: inline-block;
+}
+
+/* 1ST LEVEL */
+
+.level-one {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 30px 40px 0px 30px;
+}
+
+.level-one h3 {
+    font-family: "Montserrat", sans-serif;
+    color: var(--gold);
+}
+
+/* 1ST LEVEL - INFO LEFT */
+
+.park-intro input {
+    background: var(--darkGreen);
+    color: var(--gold);
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 40px;
+}
+
+.park-intro input::placeholder {
+    color: var(--gold);
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+}
+
+.park-intro {
+    padding: 0px 40px 0px 0px;
+}
+
+.park-intro h1 {
+    margin: 0px;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: var(--lightGreen);
+}
+
+.park-intro h2 {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--gold);
+}
+
+
+
+/* 1ST LEVEL - INFO RIGHT */
+
+.park-info {
+    height: 800px;
+    background-color: var(--lightGreen);
+    color: var(--gold);
+    text-align: center;
+    box-shadow: 5px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.park-info h2 {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--gold);
+}
+
+.park-info h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--gold);
+}
+
+.columns-both {
+    border-top: 1px solid var(--gold);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.column-one {
+    border-right: 1px solid var(--gold);
+    padding: 0px 10px;
+}
+
+.column-two {
+    padding: 0px 10px;
+}
+
+.park-activities {
+    padding: 0px 70px;
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    gap: 0px;
+}
+
+.hazard-details {
+    padding-top: 2px;
+    line-height: 5px;
+}
+
+/* 1ST LEVEL - MAP */
+
+.map-container {
+    margin-top: 20px;
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.marker {
+    position: absolute;
+    z-index: 5;
+    color: red;
+    font-size: 25px;
+}
+
+/* MOUNTAINS */
+
+.mountains {
+    position: absolute;
+    z-index: 1;
+    top: 550px;
+    width: 100%;
+}
+
+/* 2ND LEVEL */
+
+.level-two {
+    position: absolute;
+    z-index: 2;
+    top: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr .2fr;
+    background-color: var(--darkGreen);
+    color: var(--gold);
+    padding: 30px 40px 0px 30px;
+    text-align: center;
+}
+
+.level-two h1 {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--gold);
+}
+
+/* 2ND LEVEL - FORM */
+
+.review-form {
+    margin: 0px;
+    padding: 0px;
+}
+
+.review-form textarea {
+    border: solid .5px var(--gold);
+    color: var(--gold);
+    background: transparent;
+    resize: none;
+    width: 90%;
+    height: 200px;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.rating-submit {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+/* 2ND LEVEL - REVIEWS */
+
+.review-container {
+    border: solid .5px var(--gold);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0px;
+    padding: 20px;
+}
+
+.review textarea {
+    border: solid .5px var(--gold);
+    color: var(--gold);
+    background: transparent;
+    resize: none;
+    width: 90%;
+}
+
+.user {
+    font-weight: 600;
+}
+
+
+
+
+/* GALLERY */
+
+/* 2* {
+    box-sizing: border-box;
+  }
+  
+  img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  
+  .gallery {
+    display: flex;
+    margin: 10px auto;
+    max-width: 600px;
+    position: relative;
+    padding-top: calc(400px / 600px * 100%);
+  }
+  
+  @media screen and (min-width: 600px) {
+    .gallery {
+      padding-top: 400px;
+    }
+  }
+  
+  .gallery__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .gallery__thumb {
+    padding-top: 6px;
+    margin: 6px;
+    display: block;
+    width: 100%;
+  }
+  
+  .gallery__selector {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .gallery__selector:checked + .gallery__img {
+    opacity: 1;
+  }
+  
+  .gallery__selector:checked ~ .gallery__thumb > img {
+    box-shadow: 0 0 0 3px #0be2f6;
+  } */
+
+
+
+
+
+
+  /* * {
+    box-sizing: border-box;
+  } */
+  
+  /* --no longer enormous-- */
+  
+  /* --controls width of images-- */
+  
+  
+  /* --Increases space above gallery-- */
+  /* @media screen and (min-width: 600px) { */
+    .gallery {
+      border: 1px solid red;
+      padding: 50px;
+      display: grid;
+      place-items: center;
+    }
+   
+  /* --can no longer change selected pic when turned on--  */
+   .gallery__img {
+    max-width: 80%;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; */
+  } 
+
+  .all_thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+    width: 750px;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 15px; 
+    /* max-height: 30%;
+    max-width: 30%; */
+    /* margin: 10px auto;
+    max-width: 600px;
+    position: relative;
+    padding-top: calc(400px / 600px * 100%); */
+  }
+  
+  /* --barely shrinks? when active-- */
+   .gallery__thumb {
+    width: 125px;
+    height: 125px;
+    flex-basis: 10%;
+
+    /* padding-top: 6px;
+    margin: 6px;
+    display: block; */
+  }
+  
+  /* --hides selection bubble when active-- */
+  /* .gallery__selector {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+  } */
+  
+  /* no-effect */
+  .gallery__selector:checked + .gallery__img {
+    opacity: 1;
+  }
+  
+  /* --no effect-- */
+  .gallery__selector:checked ~ .gallery__thumb > img {
+    box-shadow: 0 0 0 3px #0be2f6;;
+  } 
+
+
+
+
+
+
+
+
+
+
+
+  /* .image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+} */
