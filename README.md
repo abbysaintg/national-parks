@@ -1,6 +1,7 @@
 ## NATIONAL PARKS API PROJECT
 This app was created for the Phase 3 project at Flatiron's Software Engineering Bootcamp. It pulls data from th National Parks Service API, and allows the user to search through all the parks in the database, display information on the frontend, and submit reviews.
 
+<img width="1555" alt="Screenshot 2023-03-08 at 5 33 16 PM" src="https://user-images.githubusercontent.com/116386196/223869890-4f51498c-33c1-45d1-86fe-6c9122607c2f.png">
 
 ## GETTING STARTED
 To get started, you'll need to have Ruby, Node.js, and NPM installed on your machine. Once you have those installed, you can follow these steps:
