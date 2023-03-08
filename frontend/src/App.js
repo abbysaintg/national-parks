@@ -37,7 +37,7 @@ function App() {
     const [latitude, setLatitude] = useState(44.409286)
     const [longitude, setLongitude] = useState(-68.247501)
 
-    // SET GOOGLE MAP 
+    // SET GOOGLE MAP
     const [mapURL, setMapUrl] = useState('https://maps.google.com/maps?width=300&amp;height=300&amp;hl=en&amp;q=acadia national park&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed')
 
     // FETCH ALL PARKS
@@ -103,12 +103,7 @@ function App() {
                 <Form userID={userID} selectedPark={selectedPark} newReviewSubmit={newReviewSubmit} />
                 <Reviews parkReviews={parkReviews} handleReviewDelete={handleReviewDelete} handleReviewUpdate={handleReviewUpdate} userID={userID} selectedPark={selectedPark} username={username} />
             </div>
-<<<<<<< Updated upstream
-            <Reviews parkReviews={parkReviews} handleReviewDelete={handleReviewDelete} handleReviewUpdate={handleReviewUpdate} userID={userID} selectedPark={selectedPark} username={username} />
             <ImageGallery parkName={parkName} parkImages={parkImages} />
-=======
-            <ImageGallery parkImages={parkImages} />
->>>>>>> Stashed changes
         </div>
     )
 }
